@@ -8,8 +8,6 @@ import { find, uniq } from 'lodash';
 
 import useConversation from "../../hooks/useConversation";
 import { pusherClient } from "../../libs/pusher";
-// import GroupChatModal from "@/app/components/modals/GroupChatModal";
-// import ConversationBox from "./ConversationBox";
 import GroupAddOutlinedIcon from '@mui/icons-material/GroupAddOutlined';
 import { FullConversationType } from "../../types";
 import { Box, IconButton, List, Typography } from "@mui/material";

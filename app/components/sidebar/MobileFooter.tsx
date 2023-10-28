@@ -8,6 +8,7 @@ import { UserAvatar } from '../Avatar';
 import { User } from '@prisma/client';
 import { useState } from 'react';
 import { UserSettingsModal } from './UserSettingsModal';
+import useConversation from '../../hooks/useConversation';
 
 const drawerWidth = '100%';
 
@@ -19,6 +20,11 @@ export const MobileFooter: React.FC<MobileFooterProps> = ({ currentUser }) => {
 
     const routes = useRoutes();
     const [isOpen, setIsOpen] = useState(false);
+    const { isOpen: isConversationOpen} = useConversation();
+
+    if (isConversationOpen) {
+        return null;
+    }
 
     return (
         <>
@@ -27,7 +33,6 @@ export const MobileFooter: React.FC<MobileFooterProps> = ({ currentUser }) => {
                 isOpen={isOpen}
                 onClose={() => setIsOpen(false)}
             />
-
             <Drawer
                 sx={{
                     display: {

@@ -39,6 +39,8 @@ export const GroupChatModal: React.FC<GroupChatModalProps> = ({ isOpen, onClose,
     const onSubmit: SubmitHandler<FieldValues> = (data) => {
         setIsLoading(true);
 
+        console.log(data);
+
         axios.post('/api/conversations', {
             ...data,
             isGroup: true
