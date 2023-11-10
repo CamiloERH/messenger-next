@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### 🚀: Deployed: https://messenger-next-production.up.railway.app/
+
+
+---
+
+### :books: Features:
+
+- ```Pusher```: Channels, chat, user active state.
+- ```NextAuth - Oauth```: Local authentication, as well as authentication through Google and GitHub providers.
+- ```MaterialUI```: UI, styled components.
+- ```Cloudinary```: For image uploading.
+
+---
 
 ## Getting Started
 
